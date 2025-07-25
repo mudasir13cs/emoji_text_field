@@ -29,7 +29,6 @@ topics:
   - input
   - picker
   - ui
-  - widget
 
 screenshots:
   - description: 'Emoji Text Field Banner - Universal emoji picker for Flutter'
