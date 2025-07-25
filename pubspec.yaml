@@ -1,0 +1,48 @@
+name: emoji_text_field
+description: A universal emoji picker that works with any TextField in Flutter. Easy to integrate with customizable design and comprehensive emoji support.
+version: 1.0.0
+homepage: https://github.com/mudasir13cs/emoji_text_field
+repository: https://github.com/mudasir13cs/emoji_text_field
+issue_tracker: https://github.com/mudasir13cs/emoji_text_field/issues
+documentation: https://github.com/mudasir13cs/emoji_text_field#readme
+publisher: baijisoft.com
+publish_to: https://pub.dev
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  # This package is a pure Dart package
+
+topics:
+  - emoji
+  - textfield
+  - input
+  - picker
+  - ui
+  - widget
+
+screenshots:
+  - description: 'Emoji Text Field Banner - Universal emoji picker for Flutter'
+    path: screenshots/banner.png
+  - description: 'Enhanced TextField with built-in emoji button'
+    path: screenshots/demo1.jpeg
+  - description: 'Emoji picker with search and categories'
+    path: screenshots/demo2.jpeg
+  - description: 'Multiline support for comments and posts'
+    path: screenshots/demo3.jpeg
+  - description: 'Web demo showing full functionality'
+    path: screenshots/web-demo.png
+
+funding:
+  - https://github.com/sponsors/mudasir13cs
