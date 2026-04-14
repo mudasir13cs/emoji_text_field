@@ -143,8 +143,8 @@ class _EmojiKeyboardViewState extends State<EmojiKeyboardView>
   void initState() {
     super.initState();
     int tabCount = widget.config.showRecentTab
-        ? _categories.length
-        : _categories.length - 1;
+        ? _categories.length + 1
+        : _categories.length;
     _tabController = TabController(
       length: tabCount,
       vsync: this,
