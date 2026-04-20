@@ -143,8 +143,8 @@ class _EmojiKeyboardViewState extends State<EmojiKeyboardView>
   void initState() {
     super.initState();
     int tabCount = widget.config.showRecentTab
-        ? _categories.length
-        : _categories.length - 1;
+        ? _categories.length + 1
+        : _categories.length;
     _tabController = TabController(
       length: tabCount,
       vsync: this,
@@ -228,7 +228,7 @@ class _EmojiKeyboardViewState extends State<EmojiKeyboardView>
     // Insert emoji at cursor position
     final text = widget.textController.text;
     final selection = widget.textController.selection;
-    final newText = text.replaceRange(
+    final newText = (selection.start == -1 && selection.end == -1) ? emoji : text.replaceRange(
       selection.start,
       selection.end,
       emoji,
